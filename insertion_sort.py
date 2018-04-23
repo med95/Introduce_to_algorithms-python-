@@ -17,9 +17,7 @@ def search(alist,val):
         if alist[i] == val:
             pos.append(i)
     return pos
-a = [5,2,4,6,1,3]
-print(insertionSort(a))
-print(search(a,5))
+
 
 def midsearch(alist,val):
     #assume alist is an ordered list(1<...<n)
@@ -39,3 +37,7 @@ def midsearch(alist,val):
         return midsearch(alist[:mid],val)
 
 print(midsearch(insertionSort(a),5))
+if __name__ == '__main__':
+    a = [5,2,4,6,1,3]
+print(insertionSort(a))
+print(search(a,5))
